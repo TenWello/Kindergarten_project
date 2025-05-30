@@ -11,8 +11,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 
 
 DEBUG = os.getenv('DJANGO_DEBUG', True)
-
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 
@@ -29,8 +28,8 @@ INSTALLED_APPS = [
     'category',
     'product',
     'meal',
+    'inventory',
 ]
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
