@@ -27,7 +27,7 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="../../index3.html" class="nav-link">Home</a>
+                <a href="{% url 'index' %}" class="nav-link">Home</a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
                 <a href="#" class="nav-link">Contact</a>
@@ -196,12 +196,12 @@
 
 
                     <li class="nav-item">
-                        <a href="{% url 'dashboard' %}" class="nav-link">
+                        <a href="{% url 'index' %}" class="nav-link">
                             <i class="bi bi-bar-chart-fill"></i>
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    {% comment %} <li class="nav-item">
                         <a href="{% url 'user' %}" class="nav-link">
                             <i class="bi bi-person-badge-fill"></i>
                             <p>Users</p>
@@ -235,7 +235,7 @@
                             <i class="bi bi-bell-fill"></i>
                             <p>Notification</p>
                         </a>
-                    </li>
+                    </li> {% endcomment %}
 
 
 
@@ -282,9 +282,9 @@
 
     <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
-            <b>Version</b> 3.1.0-rc
+            <b>Version</b> 1.0
         </div>
-        <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+        <strong>Copyright &copy;2025 <a href="https://adminlte.io">Fayziev</a>.</strong> All rights reserved.
     </footer>
 
     <!-- Control Sidebar -->
